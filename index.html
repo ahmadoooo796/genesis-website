@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GENESIS — ERP for Insurance & Broker Systems</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="logo genesis nobg.png" alt="GENESIS Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">GENESIS</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="nav-item active" data-tab="home">Home</a></li>
+        <li><a href="#" class="nav-item" data-tab="about">About</a></li>
+        <li><a href="#" class="nav-item" data-tab="features">Features</a></li>
+        <li><a href="#" class="nav-item" data-tab="download">Download</a></li>
+        <li><a href="#" class="nav-item" data-tab="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-nav-demo" data-tab="contact">Request Demo</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ MAIN CONTENT ═══════════════════════ -->
+  <main class="main-content">
+
+    <!-- ────────── HOME TAB ────────── -->
+    <section class="tab-section active" id="tab-home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
+      <div class="hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Enterprise ERP Platform — Version 3.0
+        </div>
+
+        <div class="hero-logo-wrap">
+          <img src="logo genesis nobg.png" alt="GENESIS" class="hero-logo" />
+        </div>
+
+        <h1 class="hero-headline">
+          ERP for Broker<br/>
+          <span class="headline-gradient">&amp; Insurance</span>
+        </h1>
+
+        <p class="hero-sub">
+          A fully integrated enterprise system purpose-built for insurance companies and brokers.
+          Digitalize your entire workflow — from marketing to claim settlement — on one unified platform.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn-primary" data-tab="contact">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="btn-secondary" data-tab="download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span>Download Now</span>
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Core Modules</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">2022</span>
+            <span class="stat-label">Founded</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">25+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Web-Based</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module Preview Cards -->
+      <div class="modules-preview">
+        <div class="modules-label">Core Modules</div>
+        <div class="modules-grid">
+          <div class="module-card" style="--delay:0s">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <span class="module-name">Marketing</span>
+            <span class="module-desc">Prospect to Proposal</span>
+          </div>
+          <div class="module-card" style="--delay:0.07s">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <span class="module-name">Underwriting</span>
+            <span class="module-desc">Quotation to Policy</span>
+          </div>
+          <div class="module-card" style="--delay:0.14s">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <span class="module-name">Accounting</span>
+            <span class="module-desc">Invoice to Commission</span>
+          </div>
+          <div class="module-card" style="--delay:0.21s">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+            </div>
+            <span class="module-name">Claim</span>
+            <span class="module-desc">Register to Settlement</span>
+          </div>
+          <div class="module-card" style="--delay:0.28s">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <span class="module-name">HR Module</span>
+            <span class="module-desc">Workforce Management</span>
+          </div>
+          <div class="module-card" style="--delay:0.35s">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            </div>
+            <span class="module-name">Inventory</span>
+            <span class="module-desc">Procurement & Assets</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────── ABOUT TAB ────────── -->
+    <section class="tab-section" id="tab-about">
+      <div class="page-header">
+        <div class="page-header-inner">
+          <div class="page-tag">About GENESIS</div>
+          <h2 class="page-title">Built for the <span class="title-accent">Insurance Industry</span></h2>
+          <p class="page-subtitle">Developed in Indonesia by a team with over 25 years of combined ERP expertise, GENESIS is designed from the ground up to serve the unique operational demands of insurance companies and broker firms.</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <!-- About Identity Cards -->
+        <div class="about-identity">
+          <div class="identity-card">
+            <div class="identity-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div>
+              <h4>Founded 2022</h4>
+              <p>Established in Indonesia with a clear mission: to modernize insurance operations through intelligent software.</p>
+            </div>
+          </div>
+          <div class="identity-card">
+            <div class="identity-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Expert Team</h4>
+              <p>Built by ERP professionals with 15–25+ years of enterprise software development experience.</p>
+            </div>
+          </div>
+          <div class="identity-card">
+            <div class="identity-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <h4>Indonesia-First</h4>
+              <p>Tailored for local regulatory requirements, with global scalability built into the architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Purpose Section -->
+        <div class="about-purpose">
+          <div class="purpose-text">
+            <div class="page-tag" style="margin-bottom:1rem">Our Purpose</div>
+            <h3>Simplify. Automate.<br/>Scale with Confidence.</h3>
+            <p>GENESIS is an end-to-end ERP ecosystem built specifically for insurance companies and broker systems. Every module is engineered to eliminate manual bottlenecks, reduce operational risk, and give management real-time visibility across the entire business.</p>
+            <ul class="purpose-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Digitalize every step of the insurance workflow
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Automate repetitive processes with RPA technology
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Improve operational efficiency across departments
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Provide real-time reporting and analytics
+              </li>
+            </ul>
+          </div>
+          <div class="purpose-visual">
+            <div class="ecosystem-visual">
+              <div class="eco-center">
+                <img src="logo genesis nobg.png" alt="GENESIS" class="eco-logo"/>
+                <span>GENESIS</span>
+              </div>
+              <div class="eco-ring eco-ring-1">
+                <div class="eco-node" style="--a:0deg">Marketing</div>
+                <div class="eco-node" style="--a:60deg">UW</div>
+                <div class="eco-node" style="--a:120deg">Accounting</div>
+                <div class="eco-node" style="--a:180deg">Claim</div>
+                <div class="eco-node" style="--a:240deg">HR</div>
+                <div class="eco-node" style="--a:300deg">Inventory</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workflow Section -->
+        <div class="workflow-section">
+          <div class="page-tag" style="text-align:center;margin:0 auto 1rem">End-to-End Workflow</div>
+          <h3 style="text-align:center;margin-bottom:0.5rem">From First Contact to Final Settlement</h3>
+          <p style="text-align:center;color:var(--text-muted);margin-bottom:3rem;max-width:600px;margin-left:auto;margin-right:auto">Every phase of your insurance operation is connected in a seamless, traceable workflow.</p>
+
+          <div class="workflow-flow">
+            <!-- Marketing -->
+            <div class="workflow-stage">
+              <div class="wf-header">
+                <div class="wf-icon wf-marketing">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <div class="wf-title">Marketing</div>
+              </div>
+              <div class="wf-steps">
+                <div class="wf-step"><span>01</span>Prospect Identification</div>
+                <div class="wf-step"><span>02</span>Request for Proposal</div>
+                <div class="wf-step"><span>03</span>Proposal Creation</div>
+                <div class="wf-step"><span>04</span>Proposal Approval</div>
+              </div>
+            </div>
+
+            <div class="wf-arrow">
+              <svg viewBox="0 0 40 20" fill="none"><path d="M0 10h36M30 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+
+            <!-- Underwriting -->
+            <div class="workflow-stage">
+              <div class="wf-header">
+                <div class="wf-icon wf-uw">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <div class="wf-title">Underwriting</div>
+              </div>
+              <div class="wf-steps">
+                <div class="wf-step"><span>01</span>Risk Placing</div>
+                <div class="wf-step"><span>02</span>Quotation</div>
+                <div class="wf-step"><span>03</span>Closing</div>
+                <div class="wf-step"><span>04</span>Policy Generation</div>
+                <div class="wf-step"><span>05</span>Endorsement</div>
+              </div>
+            </div>
+
+            <div class="wf-arrow">
+              <svg viewBox="0 0 40 20" fill="none"><path d="M0 10h36M30 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+
+            <!-- Accounting -->
+            <div class="workflow-stage">
+              <div class="wf-header">
+                <div class="wf-icon wf-acc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                </div>
+                <div class="wf-title">Accounting</div>
+              </div>
+              <div class="wf-steps">
+                <div class="wf-step"><span>01</span>Invoice Issuance</div>
+                <div class="wf-step"><span>02</span>Debit / Credit Note</div>
+                <div class="wf-step"><span>03</span>Commission Tracking</div>
+                <div class="wf-step"><span>04</span>Financial Reporting</div>
+              </div>
+            </div>
+
+            <div class="wf-arrow">
+              <svg viewBox="0 0 40 20" fill="none"><path d="M0 10h36M30 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+
+            <!-- Claim -->
+            <div class="workflow-stage">
+              <div class="wf-header">
+                <div class="wf-icon wf-claim">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+                </div>
+                <div class="wf-title">Claim</div>
+              </div>
+              <div class="wf-steps">
+                <div class="wf-step"><span>01</span>Claim Registration</div>
+                <div class="wf-step"><span>02</span>Verification</div>
+                <div class="wf-step"><span>03</span>Assessment</div>
+                <div class="wf-step"><span>04</span>Settlement</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────── FEATURES TAB ────────── -->
+    <section class="tab-section" id="tab-features">
+      <div class="page-header">
+        <div class="page-header-inner">
+          <div class="page-tag">Platform Capabilities</div>
+          <h2 class="page-title">Everything You Need,<br/><span class="title-accent">In One System</span></h2>
+          <p class="page-subtitle">GENESIS delivers a complete, interconnected module suite engineered for the insurance industry's most demanding operational requirements.</p>
+        </div>
+      </div>
+
+      <div class="features-content">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card-top">
+              <div class="feature-icon feat-marketing">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div class="feature-tag">Marketing</div>
+            </div>
+            <h3>Marketing Module</h3>
+            <p>Manage the full client acquisition lifecycle from initial prospect identification through proposal creation, review, and approval. Keep your sales pipeline organized and auditable.</p>
+            <ul class="feature-points">
+              <li>Prospect & lead management</li>
+              <li>Request for Proposal (RFP) workflow</li>
+              <li>Proposal builder with approval routing</li>
+              <li>Sales pipeline dashboard</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-top">
+              <div class="feature-icon feat-uw">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div class="feature-tag">Underwriting</div>
+            </div>
+            <h3>Underwriting Module</h3>
+            <p>Streamline the entire underwriting process with automated risk assessment, intelligent quotation tools, and policy document generation — all with full audit trails.</p>
+            <ul class="feature-points">
+              <li>Risk placing & assessment</li>
+              <li>Automated quotation engine</li>
+              <li>Policy document generation</li>
+              <li>Endorsement management</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-top">
+              <div class="feature-icon feat-acc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              </div>
+              <div class="feature-tag">Accounting</div>
+            </div>
+            <h3>Accounting Module</h3>
+            <p>Full-cycle financial management tailored to insurance accounting standards. Handle invoicing, notes, commissions, and produce accurate financial reports on demand.</p>
+            <ul class="feature-points">
+              <li>Invoice generation & tracking</li>
+              <li>Debit & credit note management</li>
+              <li>Commission calculation engine</li>
+              <li>Multi-currency financial reporting</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-top">
+              <div class="feature-icon feat-claim">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+              </div>
+              <div class="feature-tag">Claim</div>
+            </div>
+            <h3>Claim Module</h3>
+            <p>End-to-end claim lifecycle management from first notification of loss to final settlement. Reduce processing time, improve accuracy, and maintain regulatory compliance.</p>
+            <ul class="feature-points">
+              <li>Claim intake & registration</li>
+              <li>Document verification workflows</li>
+              <li>Adjuster assignment & tracking</li>
+              <li>Settlement processing & reporting</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-top">
+              <div class="feature-icon feat-hr">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              </div>
+              <div class="feature-tag">Human Resources</div>
+            </div>
+            <h3>HR Module</h3>
+            <p>Comprehensive human capital management with payroll processing, attendance tracking, performance management, and employee self-service portals integrated with your ERP.</p>
+            <ul class="feature-points">
+              <li>Employee database management</li>
+              <li>Payroll & benefits processing</li>
+              <li>Attendance & leave management</li>
+              <li>Performance review tracking</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-top">
+              <div class="feature-icon feat-inv">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+              </div>
+              <div class="feature-tag">Inventory</div>
+            </div>
+            <h3>Inventory & Procurement</h3>
+            <p>Control your office assets, manage vendor relationships, and automate procurement approval workflows. Maintain full visibility of company resources across all locations.</p>
+            <ul class="feature-points">
+              <li>Asset & inventory tracking</li>
+              <li>Procurement request workflows</li>
+              <li>Vendor management system</li>
+              <li>Purchase order automation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Supporting Features -->
+        <div class="supporting-section">
+          <div class="page-tag" style="text-align:center;margin:0 auto 1rem">Platform Infrastructure</div>
+          <h3 style="text-align:center;margin-bottom:3rem">Supporting Technologies</h3>
+          <div class="supporting-grid">
+            <div class="support-card">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l3 3-3 3M13 15h3M3 6a9 9 0 1018 0A9 9 0 003 6z"/><path d="M3 6h18M3 18h18"/></svg>
+              </div>
+              <h4>API Integration</h4>
+              <p>RESTful API-first architecture allowing seamless integration with third-party platforms, banking systems, regulators, and external data providers.</p>
+            </div>
+            <div class="support-card">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              </div>
+              <h4>Mobile Application</h4>
+              <p>Native mobile apps for iOS and Android, providing field agents and executives with real-time access to approvals, dashboards, and key operational data.</p>
+            </div>
+            <div class="support-card">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h4>Robotic Process Automation</h4>
+              <p>Intelligent RPA bots automate repetitive high-volume tasks — data entry, document processing, notifications — reducing manual effort by up to 80%.</p>
+            </div>
+            <div class="support-card">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <h4>Real-Time Processing</h4>
+              <p>All transactions, approvals, and system events are processed and reflected in real-time, ensuring your data is always current across every module and user.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────── DOWNLOAD TAB ────────── -->
+    <section class="tab-section" id="tab-download">
+      <div class="page-header">
+        <div class="page-header-inner">
+          <div class="page-tag">Deployment Options</div>
+          <h2 class="page-title">Deploy on Your<br/><span class="title-accent">Terms</span></h2>
+          <p class="page-subtitle">GENESIS is available across multiple platforms, architected for enterprise-grade performance, security, and scalability.</p>
+        </div>
+      </div>
+
+      <div class="download-content">
+        <div class="platform-grid">
+          <div class="platform-card platform-featured">
+            <div class="platform-badge">Recommended</div>
+            <div class="platform-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Web Application</h3>
+            <p>Full-featured browser-based access. No installation required. Accessible from any device with a supported browser. Ideal for enterprise-wide deployment.</p>
+            <ul class="platform-reqs">
+              <li><strong>Browser:</strong> Chrome 90+, Edge 90+, Firefox 88+</li>
+              <li><strong>Connection:</strong> Minimum 10 Mbps</li>
+              <li><strong>Resolution:</strong> 1280×720 or higher</li>
+            </ul>
+            <a href="#" class="btn-download-main">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Access Web Platform
+            </a>
+          </div>
+
+          <div class="platform-card">
+            <div class="platform-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>Mobile App</h3>
+            <p>iOS and Android native applications for on-the-go access. Optimized for approvals, reporting, and real-time notifications.</p>
+            <ul class="platform-reqs">
+              <li><strong>iOS:</strong> Version 14.0 or later</li>
+              <li><strong>Android:</strong> Version 9.0 or later</li>
+              <li><strong>Storage:</strong> Minimum 150 MB</li>
+            </ul>
+            <div class="store-buttons">
+              <a href="#" class="btn-store">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                App Store
+              </a>
+              <a href="#" class="btn-store">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.37c.35.19.76.17 1.12-.04L16.47 16l-3.27-3.28-10.02 10.65zM20.7 10.56l-2.86-1.65-3.65 3.09 3.65 3.62 2.87-1.65c.82-.47.82-1.94-.01-2.41zM1.48.48C1.18.8 1 1.28 1 1.9v20.2c0 .62.18 1.1.49 1.42l.08.07 11.33-11.33v-.26L1.56.41l-.08.07z"/></svg>
+                Google Play
+              </a>
+            </div>
+          </div>
+
+          <div class="platform-card">
+            <div class="platform-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h12M6 12h8M6 16h5"/></svg>
+            </div>
+            <h3>Desktop Client</h3>
+            <p>Windows-based desktop client for offline capability and enhanced performance in low-bandwidth environments. Syncs automatically when connected.</p>
+            <ul class="platform-reqs">
+              <li><strong>OS:</strong> Windows 10 / 11 (64-bit)</li>
+              <li><strong>RAM:</strong> Minimum 8 GB</li>
+              <li><strong>Disk:</strong> Minimum 2 GB free space</li>
+            </ul>
+            <a href="#" class="btn-download">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download for Windows
+            </a>
+          </div>
+        </div>
+
+        <!-- System Requirements -->
+        <div class="sysreq-section">
+          <div class="page-tag" style="text-align:center;margin:0 auto 1rem">Infrastructure</div>
+          <h3 style="text-align:center;margin-bottom:2.5rem">System Requirements</h3>
+          <div class="sysreq-grid">
+            <div class="sysreq-card">
+              <div class="sysreq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h4>Database Server</h4>
+              <ul>
+                <li>Microsoft SQL Server 2019+</li>
+                <li>Oracle Database 19c+</li>
+                <li>High Availability (HA) setup recommended</li>
+                <li>Minimum 32 GB RAM server</li>
+              </ul>
+            </div>
+            <div class="sysreq-card">
+              <div class="sysreq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+              </div>
+              <h4>Application Server</h4>
+              <ul>
+                <li>Windows Server 2019/2022</li>
+                <li>IIS 10+ or Nginx</li>
+                <li>16-core CPU recommended</li>
+                <li>64 GB RAM for production</li>
+              </ul>
+            </div>
+            <div class="sysreq-card">
+              <div class="sysreq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l3 3-3 3M13 15h3M3 6a9 9 0 1018 0A9 9 0 003 6z"/><path d="M3 6h18M3 18h18"/></svg>
+              </div>
+              <h4>API Gateway</h4>
+              <ul>
+                <li>RESTful API architecture</li>
+                <li>OAuth 2.0 / JWT authentication</li>
+                <li>SSL/TLS 1.3 encryption</li>
+                <li>Rate limiting & monitoring</li>
+              </ul>
+            </div>
+            <div class="sysreq-card">
+              <div class="sysreq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4>Security & Compliance</h4>
+              <ul>
+                <li>AES-256 data encryption at rest</li>
+                <li>End-to-end TLS in transit</li>
+                <li>Role-based access control (RBAC)</li>
+                <li>Full audit log & SOC2 ready</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="enterprise-banner">
+          <div class="enterprise-text">
+            <h3>Enterprise Deployment Support</h3>
+            <p>Our technical team provides full on-site or remote deployment assistance, infrastructure planning, data migration, and staff training. Every enterprise license includes dedicated technical account management.</p>
+          </div>
+          <button class="btn-primary" data-tab="contact">
+            <span>Talk to Sales</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────── CONTACT TAB ────────── -->
+    <section class="tab-section" id="tab-contact">
+      <div class="page-header">
+        <div class="page-header-inner">
+          <div class="page-tag">Get In Touch</div>
+          <h2 class="page-title">Let's Build Your<br/><span class="title-accent">Digital Future</span></h2>
+          <p class="page-subtitle">Whether you're looking for a product demo, have technical questions, or are ready to deploy — our team is here to help.</p>
+        </div>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Reach out through any channel below or fill in the form. Our enterprise team responds within 1 business day.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">info@genesis-erp.id</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+62 21 5555 9999</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Office</span>
+                <span class="contact-value">Jl. Sudirman Kav. 52-53,<br/>Jakarta Selatan 12190, Indonesia</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Business Hours</span>
+                <span class="contact-value">Monday – Friday, 08:00 – 17:00 WIB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-tags">
+            <span>Enterprise Sales</span>
+            <span>Technical Support</span>
+            <span>Product Demo</span>
+            <span>Partnership</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Business Email</label>
+              <input type="email" id="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" placeholder="Your company or organization" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="">Select a topic…</option>
+                <option>Product Demo Request</option>
+                <option>Pricing & Licensing</option>
+                <option>Technical Support</option>
+                <option>Partnership Inquiry</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Describe your needs or question…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h4>Message Sent!</h4>
+            <p>Thank you for reaching out. Our team will respond within 1 business day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo genesis nobg.png" alt="GENESIS" class="footer-logo" />
+        <span>GENESIS</span>
+      </div>
+      <p class="footer-copy">© 2024 GENESIS ERP. All rights reserved. Built in Indonesia for the Insurance Industry.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Documentation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
