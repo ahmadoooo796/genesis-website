@@ -1,7 +1,7 @@
 /**
  * GENESIS ERP — Main JavaScript
  * Tab navigation, interactions, and UI logic
- * Version: 3.0
+ * Version: 3.1 — 10 Modules Edition
  */
 
 (function () {
@@ -13,45 +13,28 @@
 
   const navItems    = document.querySelectorAll('.nav-item');
   const tabSections = document.querySelectorAll('.tab-section');
+  const validTabs   = ['home', 'about', 'features', 'download', 'contact'];
 
-  /**
-   * Switch to a given tab by name
-   * @param {string} tabName - e.g. 'home', 'about', 'features'
-   */
   function switchTab(tabName) {
-    // Guard: ensure tab exists
+    if (!validTabs.includes(tabName)) return;
     const target = document.getElementById('tab-' + tabName);
     if (!target) return;
 
-    // Update nav active state
-    navItems.forEach(item => {
-      item.classList.toggle('active', item.dataset.tab === tabName);
-    });
+    navItems.forEach(item => item.classList.toggle('active', item.dataset.tab === tabName));
+    tabSections.forEach(s => s.classList.remove('active', 'fade-in'));
 
-    // Hide all sections
-    tabSections.forEach(section => {
-      section.classList.remove('active', 'fade-in');
-    });
-
-    // Scroll to top on mobile
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Show target section with animation
     requestAnimationFrame(() => {
       target.classList.add('active');
-      requestAnimationFrame(() => {
-        target.classList.add('fade-in');
-      });
+      requestAnimationFrame(() => target.classList.add('fade-in'));
     });
 
-    // Close mobile menu if open
     closeMobileMenu();
-
-    // Update URL hash (without page jump)
     history.replaceState(null, '', '#' + tabName);
   }
 
-  // Bind nav item clicks
+  // Nav item clicks
   navItems.forEach(item => {
     item.addEventListener('click', function (e) {
       e.preventDefault();
@@ -59,7 +42,7 @@
     });
   });
 
-  // Bind ALL elements with data-tab attribute (CTA buttons, etc.)
+  // Any [data-tab] element (buttons, CTAs, logo)
   document.addEventListener('click', function (e) {
     const trigger = e.target.closest('[data-tab]');
     if (trigger && !trigger.classList.contains('nav-item')) {
@@ -68,18 +51,14 @@
     }
   });
 
-  // Handle URL hash on load
+  // Hash routing on load
   (function () {
     const hash = window.location.hash.replace('#', '');
-    const validTabs = ['home', 'about', 'features', 'download', 'contact'];
     if (hash && validTabs.includes(hash)) {
       switchTab(hash);
     } else {
-      // Default: show home
       const home = document.getElementById('tab-home');
-      if (home) {
-        home.classList.add('active', 'fade-in');
-      }
+      if (home) { home.classList.add('active', 'fade-in'); }
     }
   })();
 
@@ -99,31 +78,24 @@
     }
   }
 
-  function openMobileMenu() {
-    if (navLinks) navLinks.classList.add('open');
-    if (hamburger) {
-      const spans = hamburger.querySelectorAll('span');
-      if (spans[0]) spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      if (spans[1]) spans[1].style.opacity   = '0';
-      if (spans[2]) spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    }
-  }
-
   if (hamburger) {
     hamburger.addEventListener('click', function () {
       const isOpen = navLinks && navLinks.classList.contains('open');
-      isOpen ? closeMobileMenu() : openMobileMenu();
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        navLinks.classList.add('open');
+        const spans = hamburger.querySelectorAll('span');
+        if (spans[0]) spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        if (spans[1]) spans[1].style.opacity   = '0';
+        if (spans[2]) spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      }
     });
   }
 
-  // Close on outside click
   document.addEventListener('click', function (e) {
-    if (
-      navLinks &&
-      navLinks.classList.contains('open') &&
-      !navLinks.contains(e.target) &&
-      !hamburger.contains(e.target)
-    ) {
+    if (navLinks && navLinks.classList.contains('open') &&
+        !navLinks.contains(e.target) && hamburger && !hamburger.contains(e.target)) {
       closeMobileMenu();
     }
   });
@@ -134,11 +106,8 @@
   ═══════════════════════════════════════════════════════ */
 
   const navbar = document.getElementById('navbar');
-
   window.addEventListener('scroll', function () {
-    if (navbar) {
-      navbar.classList.toggle('scrolled', window.scrollY > 10);
-    }
+    if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 10);
   }, { passive: true });
 
 
@@ -152,55 +121,40 @@
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-
       const btn = contactForm.querySelector('button[type="submit"]');
       const btnSpan = btn ? btn.querySelector('span') : null;
 
-      // Loading state
-      if (btn) {
-        btn.disabled = true;
-        btn.style.opacity = '0.7';
-        if (btnSpan) btnSpan.textContent = 'Sending…';
-      }
+      if (btn) { btn.disabled = true; btn.style.opacity = '0.7'; }
+      if (btnSpan) btnSpan.textContent = 'Sending…';
 
-      // Simulate API call delay
       setTimeout(function () {
         contactForm.style.display = 'none';
         if (formSuccess) formSuccess.style.display = 'block';
 
-        // Reset after showing success (optional auto-reset)
         setTimeout(function () {
           contactForm.reset();
           contactForm.style.display = 'flex';
           if (formSuccess) formSuccess.style.display = 'none';
-          if (btn) {
-            btn.disabled = false;
-            btn.style.opacity = '';
-            if (btnSpan) btnSpan.textContent = 'Send Message';
-          }
+          if (btn) { btn.disabled = false; btn.style.opacity = ''; }
+          if (btnSpan) btnSpan.textContent = 'Send Message';
         }, 5000);
-
       }, 1400);
     });
   }
 
 
   /* ═══════════════════════════════════════════════════════
-     MODULE CARDS — click to navigate to features
+     MODULE CARDS — click to features tab
   ═══════════════════════════════════════════════════════ */
 
-  const moduleCards = document.querySelectorAll('.module-card');
-  moduleCards.forEach(card => {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', function () {
-      switchTab('features');
-    });
+  document.querySelectorAll('.module-card').forEach(card => {
+    card.addEventListener('click', () => switchTab('features'));
     card.setAttribute('title', 'View all features');
   });
 
 
   /* ═══════════════════════════════════════════════════════
-     INTERSECTION OBSERVER — Staggered card animations
+     INTERSECTION OBSERVER — staggered card entry
   ═══════════════════════════════════════════════════════ */
 
   const animatables = document.querySelectorAll(
@@ -208,91 +162,52 @@
   );
 
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, idx) {
         if (entry.isIntersecting) {
+          // Slight stagger based on sibling index
+          const siblings = Array.from(entry.target.parentElement.children);
+          const i = siblings.indexOf(entry.target);
+          entry.target.style.transitionDelay = (i * 0.06) + 's';
           entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
+          io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-    animatables.forEach(el => observer.observe(el));
+    animatables.forEach(el => io.observe(el));
   } else {
-    // Fallback: show all immediately
     animatables.forEach(el => el.classList.add('is-visible'));
   }
 
 
   /* ═══════════════════════════════════════════════════════
-     DOWNLOAD BUTTON INTERACTIONS
+     DOWNLOAD BUTTON FEEDBACK
   ═══════════════════════════════════════════════════════ */
 
-  const downloadBtns = document.querySelectorAll('.btn-download-main, .btn-download');
-  downloadBtns.forEach(btn => {
+  document.querySelectorAll('.btn-download-main, .btn-download').forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
-
-      const originalText = this.textContent.trim();
-      const originalHTML = this.innerHTML;
-
-      this.innerHTML = `
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10" stroke-dasharray="63" stroke-dashoffset="63"
-            style="animation: stroke-fill 1.2s ease forwards"/>
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        Preparing Download…
-      `;
-      this.style.pointerEvents = 'none';
-      this.style.opacity = '0.75';
-
+      const orig = this.innerHTML;
+      this.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="20 6 9 17 4 12"/></svg> Preparing…';
+      this.style.pointerEvents = 'none'; this.style.opacity = '.75';
       setTimeout(() => {
-        this.innerHTML = originalHTML;
-        this.style.pointerEvents = '';
-        this.style.opacity = '';
+        this.innerHTML = orig; this.style.pointerEvents = ''; this.style.opacity = '';
       }, 2500);
     });
   });
 
 
   /* ═══════════════════════════════════════════════════════
-     LOGO CLICK — back to home
-  ═══════════════════════════════════════════════════════ */
-
-  const navLogo = document.querySelector('.nav-logo');
-  if (navLogo) {
-    navLogo.addEventListener('click', function () {
-      switchTab('home');
-    });
-  }
-
-
-  /* ═══════════════════════════════════════════════════════
-     KEYBOARD NAVIGATION
+     KEYBOARD SHORTCUTS
   ═══════════════════════════════════════════════════════ */
 
   document.addEventListener('keydown', function (e) {
-    const tabs = ['home', 'about', 'features', 'download', 'contact'];
-
-    // Alt + number to switch tabs
     if (e.altKey && !isNaN(parseInt(e.key))) {
       const idx = parseInt(e.key) - 1;
-      if (idx >= 0 && idx < tabs.length) {
-        e.preventDefault();
-        switchTab(tabs[idx]);
-      }
+      if (idx >= 0 && idx < validTabs.length) { e.preventDefault(); switchTab(validTabs[idx]); }
     }
-
-    // Escape to close mobile menu
     if (e.key === 'Escape') closeMobileMenu();
   });
-
-
-  /* ═══════════════════════════════════════════════════════
-     TOOLTIP: keyboard shortcuts hint (dev helper)
-  ═══════════════════════════════════════════════════════ */
-
-  // console.info('GENESIS ERP — Alt+1…5 to switch tabs');
 
 })();
