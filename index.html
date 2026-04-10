@@ -11,12 +11,12 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <!-- ══════════════════════════ NAVBAR ══════════════════════════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
+      <!-- Logo only — no duplicate text -->
       <div class="nav-logo" data-tab="home">
-        <img src="logo genesis no bg.png" alt="GENESIS" class="nav-logo-img" />
-        <span class="nav-logo-text">GENESIS</span>
+        <img src="Logo.png" alt="GENESIS" class="nav-logo-img" />
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#" class="nav-item active" data-tab="home">Home</a></li>
@@ -28,16 +28,16 @@
       <div class="nav-actions">
         <button class="btn-nav-demo" data-tab="contact">Request Demo</button>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ═══════════════════════ MAIN ═══════════════════════ -->
+  <!-- ══════════════════════════ MAIN ══════════════════════════ -->
   <main class="main-content">
 
-    <!-- ══════════════════ HOME TAB ══════════════════ -->
+    <!-- ════════════ HOME ════════════ -->
     <section class="tab-section active" id="tab-home">
       <div class="hero-bg-grid"></div>
       <div class="hero-orb hero-orb-1"></div>
@@ -45,14 +45,15 @@
       <div class="hero-orb hero-orb-3"></div>
 
       <div class="hero-container">
+
         <div class="hero-badge">
           <span class="badge-dot"></span>
           Enterprise ERP Platform — Version 3.0
         </div>
 
-        <!-- LARGER LOGO -->
+        <!-- DOMINANT HERO LOGO -->
         <div class="hero-logo-wrap">
-          <img src="logo genesis no bg.png" alt="GENESIS" class="hero-logo" />
+          <img src="Logo.png" alt="GENESIS ERP" class="hero-logo" />
         </div>
 
         <h1 class="hero-headline">
@@ -99,171 +100,104 @@
         </div>
       </div><!-- /hero-container -->
 
-      <!-- ══ MODULES PREVIEW ══ -->
+      <!-- ── MODULES PREVIEW ── -->
       <div class="modules-preview">
         <p class="modules-label">Core Modules</p>
 
-        <!-- FERRIS WHEEL — JS-driven counter-rotation ensures upright text -->
+        <!-- Ferris wheel (desktop) — JS positions items; cards never rotate -->
         <div class="modules-wheel-wrap" id="wheelWrap">
           <div class="modules-wheel" id="modulesWheel">
-            <!-- 11 items; angle = i * (360/11) ≈ 32.727deg each -->
             <div class="mw-item" data-index="0">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
                 <span class="mw-name">Marketing</span>
               </div>
             </div>
             <div class="mw-item" data-index="1">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
                 <span class="mw-name">Underwriting</span>
               </div>
             </div>
             <div class="mw-item" data-index="2">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg></div>
                 <span class="mw-name">Mobile Application</span>
               </div>
             </div>
             <div class="mw-item" data-index="3">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
                 <span class="mw-name">Accounting</span>
               </div>
             </div>
             <div class="mw-item" data-index="4">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
                 <span class="mw-name">Finance</span>
               </div>
             </div>
             <div class="mw-item" data-index="5">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h4M7 12h4M13 8h2M13 12h2"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h4M7 12h4M13 8h2M13 12h2"/></svg></div>
                 <span class="mw-name">Budget</span>
               </div>
             </div>
             <div class="mw-item" data-index="6">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
                 <span class="mw-name">Human Resources</span>
               </div>
             </div>
             <div class="mw-item" data-index="7">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div>
                 <span class="mw-name">Claim</span>
               </div>
             </div>
             <div class="mw-item" data-index="8">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
                 <span class="mw-name">Assets Management</span>
               </div>
             </div>
             <div class="mw-item" data-index="9">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
                 <span class="mw-name">Procurement</span>
               </div>
             </div>
             <div class="mw-item" data-index="10">
               <div class="mw-card">
-                <div class="mw-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
-                </div>
+                <div class="mw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></div>
                 <span class="mw-name">Inventory</span>
               </div>
             </div>
-          </div><!-- /modules-wheel -->
+          </div><!-- /wheel -->
           <div class="mw-center-hub">
-            <img src="logo genesis no bg.png" alt="GENESIS" />
+            <img src="Logo.png" alt="GENESIS" />
           </div>
-        </div><!-- /wheel-wrap -->
+        </div>
 
-        <!-- Responsive static grid (shown on tablet/mobile) -->
+        <!-- Static grid (tablet / mobile) -->
         <div class="modules-grid">
-          <div class="module-card" style="--delay:0s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-            <span class="module-name">Marketing</span>
-            <span class="module-desc">Prospect to Proposal</span>
-          </div>
-          <div class="module-card" style="--delay:0.04s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
-            <span class="module-name">Underwriting</span>
-            <span class="module-desc">Quotation to Policy</span>
-          </div>
-          <div class="module-card" style="--delay:0.08s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg></div>
-            <span class="module-name">Mobile Application</span>
-            <span class="module-desc">iOS &amp; Android</span>
-          </div>
-          <div class="module-card" style="--delay:0.12s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
-            <span class="module-name">Accounting</span>
-            <span class="module-desc">Invoice to Commission</span>
-          </div>
-          <div class="module-card" style="--delay:0.16s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-            <span class="module-name">Finance</span>
-            <span class="module-desc">Budgeting &amp; Forecasting</span>
-          </div>
-          <div class="module-card" style="--delay:0.20s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h4M7 12h4M13 8h2M13 12h2"/></svg></div>
-            <span class="module-name">Budget</span>
-            <span class="module-desc">Plan &amp; Control Spend</span>
-          </div>
-          <div class="module-card" style="--delay:0.24s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
-            <span class="module-name">Human Resources</span>
-            <span class="module-desc">Workforce Management</span>
-          </div>
-          <div class="module-card" style="--delay:0.28s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div>
-            <span class="module-name">Claim</span>
-            <span class="module-desc">Register to Settlement</span>
-          </div>
-          <div class="module-card" style="--delay:0.32s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
-            <span class="module-name">Assets Management</span>
-            <span class="module-desc">Track &amp; Maintain Assets</span>
-          </div>
-          <div class="module-card" style="--delay:0.36s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
-            <span class="module-name">Procurement</span>
-            <span class="module-desc">Vendor &amp; PO Management</span>
-          </div>
-          <div class="module-card" style="--delay:0.40s">
-            <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></div>
-            <span class="module-name">Inventory</span>
-            <span class="module-desc">Stock &amp; Warehouse</span>
-          </div>
-        </div><!-- /modules-grid -->
-      </div><!-- /modules-preview -->
+          <div class="module-card" style="--d:0s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><span class="module-name">Marketing</span><span class="module-desc">Prospect to Proposal</span></div>
+          <div class="module-card" style="--d:.05s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><span class="module-name">Underwriting</span><span class="module-desc">Quotation to Policy</span></div>
+          <div class="module-card" style="--d:.10s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg></div><span class="module-name">Mobile Application</span><span class="module-desc">iOS &amp; Android</span></div>
+          <div class="module-card" style="--d:.15s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><span class="module-name">Accounting</span><span class="module-desc">Invoice to Commission</span></div>
+          <div class="module-card" style="--d:.20s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span class="module-name">Finance</span><span class="module-desc">Budgeting &amp; Forecasting</span></div>
+          <div class="module-card" style="--d:.25s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h4M7 12h4M13 8h2M13 12h2"/></svg></div><span class="module-name">Budget</span><span class="module-desc">Plan &amp; Control Spend</span></div>
+          <div class="module-card" style="--d:.30s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><span class="module-name">Human Resources</span><span class="module-desc">Workforce Management</span></div>
+          <div class="module-card" style="--d:.35s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div><span class="module-name">Claim</span><span class="module-desc">Register to Settlement</span></div>
+          <div class="module-card" style="--d:.40s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div><span class="module-name">Assets Management</span><span class="module-desc">Track &amp; Maintain Assets</span></div>
+          <div class="module-card" style="--d:.45s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><span class="module-name">Procurement</span><span class="module-desc">Vendor &amp; PO Management</span></div>
+          <div class="module-card" style="--d:.50s"><div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></div><span class="module-name">Inventory</span><span class="module-desc">Stock &amp; Warehouse</span></div>
+        </div>
+      </div>
     </section>
 
 
-    <!-- ══════════════════ ABOUT TAB ══════════════════ -->
+    <!-- ════════════ ABOUT ════════════ -->
     <section class="tab-section" id="tab-about">
       <div class="page-header">
         <div class="page-header-inner">
@@ -276,31 +210,16 @@
       <div class="about-content">
         <div class="about-identity">
           <div class="identity-card">
-            <div class="identity-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            </div>
-            <div>
-              <h4>Founded 2022</h4>
-              <p>Established in Indonesia with a clear mission: to modernize insurance operations through intelligent software.</p>
-            </div>
+            <div class="identity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <div><h4>Founded 2022</h4><p>Established in Indonesia with a clear mission: to modernize insurance operations through intelligent software.</p></div>
           </div>
           <div class="identity-card">
-            <div class="identity-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-            </div>
-            <div>
-              <h4>Expert Team</h4>
-              <p>Built by ERP professionals with 15–25+ years of enterprise software development experience.</p>
-            </div>
+            <div class="identity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <div><h4>Expert Team</h4><p>Built by ERP professionals with 15–25+ years of enterprise software development experience.</p></div>
           </div>
           <div class="identity-card">
-            <div class="identity-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <div>
-              <h4>Indonesia-First</h4>
-              <p>Tailored for local regulatory requirements, with global scalability built into the architecture.</p>
-            </div>
+            <div class="identity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <div><h4>Indonesia-First</h4><p>Tailored for local regulatory requirements, with global scalability built into the architecture.</p></div>
           </div>
         </div>
 
@@ -317,86 +236,57 @@
             </ul>
           </div>
           <div class="purpose-visual">
-            <!-- Circular ecosystem visual — 11 nodes at 360/11 ≈ 32.7° each -->
+            <!--
+              Circular orbit visual.
+              .eco-ring rotates via CSS. Each .eco-node is:
+                1. Positioned on the circle by JS (left/top)
+                2. Counter-rotated by JS (transform: rotate(-Xdeg)) so text stays upright.
+            -->
             <div class="ecosystem-visual">
               <div class="eco-center">
-                <img src="logo genesis no bg.png" alt="GENESIS" class="eco-logo"/>
+                <img src="Logo.png" alt="GENESIS" class="eco-logo"/>
                 <span>GENESIS</span>
               </div>
               <div class="eco-ring" id="ecoRing">
-                <div class="eco-node" data-eco-index="0">Marketing</div>
-                <div class="eco-node" data-eco-index="1">Underwriting</div>
-                <div class="eco-node" data-eco-index="2">Mobile App</div>
-                <div class="eco-node" data-eco-index="3">Accounting</div>
-                <div class="eco-node" data-eco-index="4">Finance</div>
-                <div class="eco-node" data-eco-index="5">Budget</div>
-                <div class="eco-node" data-eco-index="6">HR</div>
-                <div class="eco-node" data-eco-index="7">Claim</div>
-                <div class="eco-node" data-eco-index="8">Assets</div>
-                <div class="eco-node" data-eco-index="9">Procurement</div>
-                <div class="eco-node" data-eco-index="10">Inventory</div>
+                <div class="eco-node" data-eco-i="0">Marketing</div>
+                <div class="eco-node" data-eco-i="1">Underwriting</div>
+                <div class="eco-node" data-eco-i="2">Mobile App</div>
+                <div class="eco-node" data-eco-i="3">Accounting</div>
+                <div class="eco-node" data-eco-i="4">Finance</div>
+                <div class="eco-node" data-eco-i="5">Budget</div>
+                <div class="eco-node" data-eco-i="6">Human Resources</div>
+                <div class="eco-node" data-eco-i="7">Claim</div>
+                <div class="eco-node" data-eco-i="8">Assets Mgmt</div>
+                <div class="eco-node" data-eco-i="9">Procurement</div>
+                <div class="eco-node" data-eco-i="10">Inventory</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Workflow -->
         <div class="workflow-section">
           <div class="page-tag" style="text-align:center;margin:0 auto 1rem">End-to-End Workflow</div>
           <h3 class="section-heading" style="text-align:center;margin-bottom:.5rem">From First Contact to Final Settlement</h3>
           <p style="text-align:center;color:var(--text-muted);margin-bottom:3rem;max-width:600px;margin-left:auto;margin-right:auto;font-size:.93rem">Every phase of your insurance operation is connected in a seamless, traceable workflow.</p>
           <div class="workflow-flow">
             <div class="workflow-stage">
-              <div class="wf-header">
-                <div class="wf-icon wf-marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-                <div class="wf-title">Marketing</div>
-              </div>
-              <div class="wf-steps">
-                <div class="wf-step"><span>01</span>Prospect Identification</div>
-                <div class="wf-step"><span>02</span>Request for Proposal</div>
-                <div class="wf-step"><span>03</span>Proposal Creation</div>
-                <div class="wf-step"><span>04</span>Proposal Approval</div>
-              </div>
+              <div class="wf-header"><div class="wf-icon wf-marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><div class="wf-title">Marketing</div></div>
+              <div class="wf-steps"><div class="wf-step"><span>01</span>Prospect Identification</div><div class="wf-step"><span>02</span>Request for Proposal</div><div class="wf-step"><span>03</span>Proposal Creation</div><div class="wf-step"><span>04</span>Proposal Approval</div></div>
             </div>
             <div class="wf-arrow"><svg viewBox="0 0 40 20" fill="none"><path d="M0 10h36M30 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
             <div class="workflow-stage">
-              <div class="wf-header">
-                <div class="wf-icon wf-uw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
-                <div class="wf-title">Underwriting</div>
-              </div>
-              <div class="wf-steps">
-                <div class="wf-step"><span>01</span>Risk Placing</div>
-                <div class="wf-step"><span>02</span>Quotation</div>
-                <div class="wf-step"><span>03</span>Closing</div>
-                <div class="wf-step"><span>04</span>Policy Generation</div>
-                <div class="wf-step"><span>05</span>Endorsement</div>
-              </div>
+              <div class="wf-header"><div class="wf-icon wf-uw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><div class="wf-title">Underwriting</div></div>
+              <div class="wf-steps"><div class="wf-step"><span>01</span>Risk Placing</div><div class="wf-step"><span>02</span>Quotation</div><div class="wf-step"><span>03</span>Closing</div><div class="wf-step"><span>04</span>Policy Generation</div><div class="wf-step"><span>05</span>Endorsement</div></div>
             </div>
             <div class="wf-arrow"><svg viewBox="0 0 40 20" fill="none"><path d="M0 10h36M30 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
             <div class="workflow-stage">
-              <div class="wf-header">
-                <div class="wf-icon wf-acc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
-                <div class="wf-title">Accounting</div>
-              </div>
-              <div class="wf-steps">
-                <div class="wf-step"><span>01</span>Invoice Issuance</div>
-                <div class="wf-step"><span>02</span>Debit / Credit Note</div>
-                <div class="wf-step"><span>03</span>Commission Tracking</div>
-                <div class="wf-step"><span>04</span>Financial Reporting</div>
-              </div>
+              <div class="wf-header"><div class="wf-icon wf-acc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="wf-title">Accounting</div></div>
+              <div class="wf-steps"><div class="wf-step"><span>01</span>Invoice Issuance</div><div class="wf-step"><span>02</span>Debit / Credit Note</div><div class="wf-step"><span>03</span>Commission Tracking</div><div class="wf-step"><span>04</span>Financial Reporting</div></div>
             </div>
             <div class="wf-arrow"><svg viewBox="0 0 40 20" fill="none"><path d="M0 10h36M30 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
             <div class="workflow-stage">
-              <div class="wf-header">
-                <div class="wf-icon wf-claim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div>
-                <div class="wf-title">Claim</div>
-              </div>
-              <div class="wf-steps">
-                <div class="wf-step"><span>01</span>Claim Registration</div>
-                <div class="wf-step"><span>02</span>Verification</div>
-                <div class="wf-step"><span>03</span>Assessment</div>
-                <div class="wf-step"><span>04</span>Settlement</div>
-              </div>
+              <div class="wf-header"><div class="wf-icon wf-claim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div><div class="wf-title">Claim</div></div>
+              <div class="wf-steps"><div class="wf-step"><span>01</span>Claim Registration</div><div class="wf-step"><span>02</span>Verification</div><div class="wf-step"><span>03</span>Assessment</div><div class="wf-step"><span>04</span>Settlement</div></div>
             </div>
           </div>
         </div>
@@ -404,7 +294,7 @@
     </section>
 
 
-    <!-- ══════════════════ FEATURES TAB ══════════════════ -->
+    <!-- ════════════ FEATURES ════════════ -->
     <section class="tab-section" id="tab-features">
       <div class="page-header">
         <div class="page-header-inner">
@@ -416,217 +306,111 @@
 
       <div class="features-content">
         <!--
-          11 cards — staggered symmetrical layout:
-          Row 1: 4 cards  (cols 1–4, centered via offset padding)
-          Row 2: 4 cards  (offset half-card to the right, visually centred)
-          Row 3: 3 cards  (centred)
-          Implemented with CSS grid + explicit placement on large screens,
-          falling back to 3-col then 2-col then 1-col at smaller breakpoints.
+          4-3-4 layout (11 cards):
+            Row A (4): Marketing, Underwriting, Mobile Application, Accounting
+            Row B (3): Finance, Budget, Human Resources   ← centered
+            Row C (4): Claim, Assets Management, Procurement, Inventory
         -->
         <div class="features-grid">
 
-          <!-- Row 1: 4 cards -->
-          <div class="feature-card">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-              <div class="feature-tag">01</div>
-            </div>
+          <!-- ── ROW A (4) ── -->
+          <div class="feature-card fc-a">
+            <div class="feature-card-top"><div class="feature-icon feat-marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><span class="feature-tag">01</span></div>
             <h3>Marketing</h3>
             <p>Manage the full client acquisition lifecycle from prospect identification through proposal creation and approval.</p>
-            <ul class="feature-points">
-              <li>Prospect &amp; lead management</li>
-              <li>Request for Proposal (RFP) workflow</li>
-              <li>Proposal builder with approval routing</li>
-              <li>Sales pipeline dashboard</li>
-            </ul>
+            <ul class="feature-points"><li>Prospect &amp; lead management</li><li>Request for Proposal workflow</li><li>Proposal builder with routing</li><li>Sales pipeline dashboard</li></ul>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-uw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
-              <div class="feature-tag">02</div>
-            </div>
+          <div class="feature-card fc-a">
+            <div class="feature-card-top"><div class="feature-icon feat-uw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><span class="feature-tag">02</span></div>
             <h3>Underwriting</h3>
-            <p>Streamline risk assessment, intelligent quotation tools, and policy document generation with full audit trails.</p>
-            <ul class="feature-points">
-              <li>Risk placing &amp; assessment</li>
-              <li>Automated quotation engine</li>
-              <li>Policy document generation</li>
-              <li>Endorsement management</li>
-            </ul>
+            <p>Streamline risk assessment, quotation tools, and policy document generation with full audit trails.</p>
+            <ul class="feature-points"><li>Risk placing &amp; assessment</li><li>Automated quotation engine</li><li>Policy document generation</li><li>Endorsement management</li></ul>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg></div>
-              <div class="feature-tag">03</div>
-            </div>
+          <div class="feature-card fc-a">
+            <div class="feature-card-top"><div class="feature-icon feat-mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg></div><span class="feature-tag">03</span></div>
             <h3>Mobile Application</h3>
-            <p>Native iOS and Android apps for field agents and executives — real-time approvals, dashboards, and notifications on the go.</p>
-            <ul class="feature-points">
-              <li>iOS &amp; Android native apps</li>
-              <li>Real-time push notifications</li>
-              <li>Approval workflows on mobile</li>
-              <li>Offline data sync capability</li>
-            </ul>
+            <p>Native iOS and Android apps for real-time approvals, dashboards, and notifications on the go.</p>
+            <ul class="feature-points"><li>iOS &amp; Android native apps</li><li>Real-time push notifications</li><li>Approval workflows on mobile</li><li>Offline data sync</li></ul>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-acc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
-              <div class="feature-tag">04</div>
-            </div>
+          <div class="feature-card fc-a">
+            <div class="feature-card-top"><div class="feature-icon feat-acc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><span class="feature-tag">04</span></div>
             <h3>Accounting</h3>
-            <p>Full-cycle financial management tailored to insurance accounting standards — invoicing, notes, commissions, and reports.</p>
-            <ul class="feature-points">
-              <li>Invoice generation &amp; tracking</li>
-              <li>Debit &amp; credit note management</li>
-              <li>Commission calculation engine</li>
-              <li>Multi-currency reporting</li>
-            </ul>
+            <p>Full-cycle financial management — invoicing, debit/credit notes, commissions, and multi-currency reporting.</p>
+            <ul class="feature-points"><li>Invoice generation &amp; tracking</li><li>Debit &amp; credit note management</li><li>Commission calculation engine</li><li>Multi-currency reporting</li></ul>
           </div>
 
-          <!-- Row 2: 4 cards (offset) -->
-          <div class="feature-card feat-row2">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-finance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-              <div class="feature-tag">05</div>
-            </div>
+          <!-- ── ROW B (3 — centered) ── -->
+          <div class="feature-card fc-b">
+            <div class="feature-card-top"><div class="feature-icon feat-finance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span class="feature-tag">05</span></div>
             <h3>Finance</h3>
             <p>Strategic financial management with budgeting, forecasting, and consolidated reporting across all business units.</p>
-            <ul class="feature-points">
-              <li>Budget planning &amp; control</li>
-              <li>Cash flow forecasting</li>
-              <li>Cost centre management</li>
-              <li>Consolidated financial statements</li>
-            </ul>
+            <ul class="feature-points"><li>Budget planning &amp; control</li><li>Cash flow forecasting</li><li>Cost centre management</li><li>Consolidated financial statements</li></ul>
           </div>
 
-          <div class="feature-card feat-row2">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-budget"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h4M7 12h4M13 8h2M13 12h2"/></svg></div>
-              <div class="feature-tag">06</div>
-            </div>
+          <div class="feature-card fc-b">
+            <div class="feature-card-top"><div class="feature-icon feat-budget"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h4M7 12h4M13 8h2M13 12h2"/></svg></div><span class="feature-tag">06</span></div>
             <h3>Budget</h3>
-            <p>Structured budget planning and monitoring across departments — keep spending aligned with strategic targets in real time.</p>
-            <ul class="feature-points">
-              <li>Annual budget preparation</li>
-              <li>Department-level allocation</li>
-              <li>Variance analysis &amp; alerts</li>
-              <li>Budget vs. actuals reporting</li>
-            </ul>
+            <p>Structured budget planning and monitoring across departments — keep spending aligned with strategic targets.</p>
+            <ul class="feature-points"><li>Annual budget preparation</li><li>Department-level allocation</li><li>Variance analysis &amp; alerts</li><li>Budget vs. actuals reporting</li></ul>
           </div>
 
-          <div class="feature-card feat-row2">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-hr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
-              <div class="feature-tag">07</div>
-            </div>
+          <div class="feature-card fc-b">
+            <div class="feature-card-top"><div class="feature-icon feat-hr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><span class="feature-tag">07</span></div>
             <h3>Human Resources</h3>
             <p>Comprehensive human capital management with payroll, attendance, performance, and employee self-service portals.</p>
-            <ul class="feature-points">
-              <li>Employee database management</li>
-              <li>Payroll &amp; benefits processing</li>
-              <li>Attendance &amp; leave management</li>
-              <li>Performance review tracking</li>
-            </ul>
+            <ul class="feature-points"><li>Employee database management</li><li>Payroll &amp; benefits processing</li><li>Attendance &amp; leave management</li><li>Performance review tracking</li></ul>
           </div>
 
-          <div class="feature-card feat-row2">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-claim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div>
-              <div class="feature-tag">08</div>
-            </div>
+          <!-- ── ROW C (4) ── -->
+          <div class="feature-card fc-c">
+            <div class="feature-card-top"><div class="feature-icon feat-claim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg></div><span class="feature-tag">08</span></div>
             <h3>Claim</h3>
-            <p>End-to-end claim lifecycle management from first notification of loss to final settlement, with full compliance.</p>
-            <ul class="feature-points">
-              <li>Claim intake &amp; registration</li>
-              <li>Document verification workflows</li>
-              <li>Adjuster assignment &amp; tracking</li>
-              <li>Settlement processing &amp; reporting</li>
-            </ul>
+            <p>End-to-end claim lifecycle from first notification of loss to final settlement with full regulatory compliance.</p>
+            <ul class="feature-points"><li>Claim intake &amp; registration</li><li>Document verification</li><li>Adjuster assignment &amp; tracking</li><li>Settlement processing</li></ul>
           </div>
 
-          <!-- Row 3: 3 cards (centred) -->
-          <div class="feature-card feat-row3">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-assets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
-              <div class="feature-tag">09</div>
-            </div>
+          <div class="feature-card fc-c">
+            <div class="feature-card-top"><div class="feature-icon feat-assets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div><span class="feature-tag">09</span></div>
             <h3>Assets Management</h3>
-            <p>Full-lifecycle management of company assets from acquisition to disposal, with depreciation and maintenance schedules.</p>
-            <ul class="feature-points">
-              <li>Asset register &amp; tagging</li>
-              <li>Depreciation automation</li>
-              <li>Maintenance scheduling</li>
-              <li>Disposal &amp; write-off workflows</li>
-            </ul>
+            <p>Full-lifecycle management of company assets from acquisition to disposal with depreciation and maintenance.</p>
+            <ul class="feature-points"><li>Asset register &amp; tagging</li><li>Depreciation automation</li><li>Maintenance scheduling</li><li>Disposal &amp; write-off workflows</li></ul>
           </div>
 
-          <div class="feature-card feat-row3">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-procurement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
-              <div class="feature-tag">10</div>
-            </div>
+          <div class="feature-card fc-c">
+            <div class="feature-card-top"><div class="feature-icon feat-procurement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><span class="feature-tag">10</span></div>
             <h3>Procurement</h3>
-            <p>Automate your entire procurement cycle from purchase requisition to vendor payment with multi-level approval workflows.</p>
-            <ul class="feature-points">
-              <li>Purchase requisition &amp; PO</li>
-              <li>Vendor management system</li>
-              <li>Multi-level approval routing</li>
-              <li>Spend analytics dashboard</li>
-            </ul>
+            <p>Automate your procurement cycle from purchase requisition to vendor payment with multi-level approvals.</p>
+            <ul class="feature-points"><li>Purchase requisition &amp; PO</li><li>Vendor management</li><li>Multi-level approval routing</li><li>Spend analytics dashboard</li></ul>
           </div>
 
-          <div class="feature-card feat-row3">
-            <div class="feature-card-top">
-              <div class="feature-icon feat-inv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></div>
-              <div class="feature-tag">11</div>
-            </div>
+          <div class="feature-card fc-c">
+            <div class="feature-card-top"><div class="feature-icon feat-inv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></div><span class="feature-tag">11</span></div>
             <h3>Inventory</h3>
-            <p>Real-time visibility over stock levels, warehouse locations, and movement history ensuring optimal resource management.</p>
-            <ul class="feature-points">
-              <li>Real-time stock tracking</li>
-              <li>Multi-warehouse management</li>
-              <li>Reorder point automation</li>
-              <li>Stock movement &amp; audit log</li>
-            </ul>
+            <p>Real-time visibility over stock levels, warehouse locations, and movement history for optimal resource management.</p>
+            <ul class="feature-points"><li>Real-time stock tracking</li><li>Multi-warehouse management</li><li>Reorder point automation</li><li>Stock movement &amp; audit log</li></ul>
           </div>
 
         </div><!-- /features-grid -->
 
-        <!-- Supporting Technologies -->
+        <!-- Supporting -->
         <div class="supporting-section">
           <div class="page-tag" style="text-align:center;margin:0 auto 1rem">Platform Infrastructure</div>
           <h3 class="section-heading" style="text-align:center;margin-bottom:3rem">Supporting Technologies</h3>
           <div class="supporting-grid">
-            <div class="support-card">
-              <div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l3 3-3 3M13 15h3M3 6a9 9 0 1018 0A9 9 0 003 6z"/><path d="M3 6h18M3 18h18"/></svg></div>
-              <h4>API Integration</h4>
-              <p>RESTful API-first architecture for seamless integration with banking systems, regulators, and external data providers.</p>
-            </div>
-            <div class="support-card">
-              <div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
-              <h4>Mobile Application</h4>
-              <p>Native mobile apps for iOS and Android providing real-time access to approvals, dashboards, and key operational data.</p>
-            </div>
-            <div class="support-card">
-              <div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg></div>
-              <h4>Robotic Process Automation</h4>
-              <p>Intelligent RPA bots automate repetitive tasks — data entry, document processing, notifications — reducing manual effort by up to 80%.</p>
-            </div>
-            <div class="support-card">
-              <div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-              <h4>Real-Time Processing</h4>
-              <p>All transactions and approvals are processed and reflected in real-time, keeping data current across every module and user.</p>
-            </div>
+            <div class="support-card"><div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l3 3-3 3M13 15h3M3 6a9 9 0 1018 0A9 9 0 003 6z"/><path d="M3 6h18M3 18h18"/></svg></div><h4>API Integration</h4><p>RESTful API-first architecture for seamless integration with banking systems, regulators, and external data providers.</p></div>
+            <div class="support-card"><div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><h4>Mobile Application</h4><p>Native apps for iOS and Android providing real-time access to approvals, dashboards, and key operational data.</p></div>
+            <div class="support-card"><div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg></div><h4>Robotic Process Automation</h4><p>Intelligent RPA bots automate repetitive tasks — data entry, document processing, notifications — saving up to 80% of manual effort.</p></div>
+            <div class="support-card"><div class="support-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h4>Real-Time Processing</h4><p>All transactions and approvals are reflected in real-time, keeping data current across every module and every user.</p></div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <!-- ══════════════════ DOWNLOAD TAB ══════════════════ -->
+    <!-- ════════════ DOWNLOAD ════════════ -->
     <section class="tab-section" id="tab-download">
       <div class="page-header">
         <div class="page-header-inner">
@@ -635,30 +419,21 @@
           <p class="page-subtitle">GENESIS is available across multiple platforms, architected for enterprise-grade performance, security, and scalability.</p>
         </div>
       </div>
-
       <div class="download-content">
         <div class="platform-grid">
           <div class="platform-card platform-featured">
             <div class="platform-badge">Recommended</div>
             <div class="platform-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
             <h3>Web Application</h3>
-            <p>Full-featured browser-based access. No installation required. Accessible from any device. Ideal for enterprise-wide deployment.</p>
-            <ul class="platform-reqs">
-              <li><strong>Browser:</strong> Chrome 90+, Edge 90+, Firefox 88+</li>
-              <li><strong>Connection:</strong> Minimum 10 Mbps</li>
-              <li><strong>Resolution:</strong> 1280×720 or higher</li>
-            </ul>
+            <p>Full-featured browser-based access. No installation required. Ideal for enterprise-wide deployment.</p>
+            <ul class="platform-reqs"><li><strong>Browser:</strong> Chrome 90+, Edge 90+, Firefox 88+</li><li><strong>Connection:</strong> Minimum 10 Mbps</li><li><strong>Resolution:</strong> 1280×720 or higher</li></ul>
             <a href="#" class="btn-download-main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Access Web Platform</a>
           </div>
           <div class="platform-card">
             <div class="platform-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
             <h3>Mobile App</h3>
-            <p>iOS and Android native apps for on-the-go access. Optimized for approvals, reporting, and real-time notifications.</p>
-            <ul class="platform-reqs">
-              <li><strong>iOS:</strong> Version 14.0 or later</li>
-              <li><strong>Android:</strong> Version 9.0 or later</li>
-              <li><strong>Storage:</strong> Minimum 150 MB</li>
-            </ul>
+            <p>iOS and Android native apps for on-the-go access, approvals, reporting, and real-time notifications.</p>
+            <ul class="platform-reqs"><li><strong>iOS:</strong> Version 14.0 or later</li><li><strong>Android:</strong> Version 9.0 or later</li><li><strong>Storage:</strong> Minimum 150 MB</li></ul>
             <div class="store-buttons">
               <a href="#" class="btn-store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>App Store</a>
               <a href="#" class="btn-store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.37c.35.19.76.17 1.12-.04L16.47 16l-3.27-3.28-10.02 10.65zM20.7 10.56l-2.86-1.65-3.65 3.09 3.65 3.62 2.87-1.65c.82-.47.82-1.94-.01-2.41zM1.48.48C1.18.8 1 1.28 1 1.9v20.2c0 .62.18 1.1.49 1.42l.08.07 11.33-11.33v-.26L1.56.41l-.08.07z"/></svg>Google Play</a>
@@ -668,15 +443,10 @@
             <div class="platform-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h12M6 12h8M6 16h5"/></svg></div>
             <h3>Desktop Client</h3>
             <p>Windows-based desktop client for offline capability and enhanced performance in low-bandwidth environments.</p>
-            <ul class="platform-reqs">
-              <li><strong>OS:</strong> Windows 10 / 11 (64-bit)</li>
-              <li><strong>RAM:</strong> Minimum 8 GB</li>
-              <li><strong>Disk:</strong> Minimum 2 GB free space</li>
-            </ul>
+            <ul class="platform-reqs"><li><strong>OS:</strong> Windows 10 / 11 (64-bit)</li><li><strong>RAM:</strong> Minimum 8 GB</li><li><strong>Disk:</strong> Minimum 2 GB free space</li></ul>
             <a href="#" class="btn-download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Download for Windows</a>
           </div>
         </div>
-
         <div class="sysreq-section">
           <div class="page-tag" style="text-align:center;margin:0 auto 1rem">Infrastructure</div>
           <h3 class="section-heading" style="text-align:center;margin-bottom:2.5rem">System Requirements</h3>
@@ -687,7 +457,6 @@
             <div class="sysreq-card"><div class="sysreq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Security &amp; Compliance</h4><ul><li>AES-256 data encryption at rest</li><li>End-to-end TLS in transit</li><li>Role-based access control</li><li>Full audit log &amp; SOC2 ready</li></ul></div>
           </div>
         </div>
-
         <div class="enterprise-banner">
           <div class="enterprise-text">
             <h3>Enterprise Deployment Support</h3>
@@ -699,7 +468,7 @@
     </section>
 
 
-    <!-- ══════════════════ CONTACT TAB ══════════════════ -->
+    <!-- ════════════ CONTACT ════════════ -->
     <section class="tab-section" id="tab-contact">
       <div class="page-header">
         <div class="page-header-inner">
@@ -708,50 +477,24 @@
           <p class="page-subtitle">Whether you're looking for a product demo, have technical questions, or are ready to deploy — our team is here to help.</p>
         </div>
       </div>
-
       <div class="contact-content">
         <div class="contact-info">
           <h3>Contact Information</h3>
           <p>Reach out through any channel below or fill in the form. Our enterprise team responds within 1 business day.</p>
           <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-              <div><span class="contact-label">Email</span><span class="contact-value">info@grm-risk.com</span></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
-              <div><span class="contact-label">Phone</span><span class="contact-value">(+62)21-3881-2032</span></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-              <div><span class="contact-label">Address</span><span class="contact-value">Jl. Pejaten Barat Raya No. 17,<br/>Kel. Pejaten Barat, Kec. Pasar Minggu,<br/>Jakarta Selatan 12510</span></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-              <div><span class="contact-label">Business Hours</span><span class="contact-value">Monday – Friday, 08:00 – 17:00 WIB</span></div>
-            </div>
+            <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><span class="contact-label">Email</span><span class="contact-value">info@grm-risk.com</span></div></div>
+            <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div><span class="contact-label">Phone</span><span class="contact-value">(+62)21-3881-2032</span></div></div>
+            <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><span class="contact-label">Address</span><span class="contact-value">Jl. Pejaten Barat Raya No. 17,<br/>Kel. Pejaten Barat, Kec. Pasar Minggu,<br/>Jakarta Selatan 12510</span></div></div>
+            <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div><span class="contact-label">Business Hours</span><span class="contact-value">Monday – Friday, 08:00 – 17:00 WIB</span></div></div>
           </div>
-          <div class="contact-tags">
-            <span>Enterprise Sales</span><span>Technical Support</span><span>Product Demo</span><span>Partnership</span>
-          </div>
+          <div class="contact-tags"><span>Enterprise Sales</span><span>Technical Support</span><span>Product Demo</span><span>Partnership</span></div>
         </div>
-
         <div class="contact-form-wrap">
           <form class="contact-form" id="contactForm">
             <div class="form-group"><label for="fullName">Full Name</label><input type="text" id="fullName" placeholder="Your full name" required /></div>
             <div class="form-group"><label for="email">Business Email</label><input type="email" id="email" placeholder="you@company.com" required /></div>
             <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" placeholder="Your company or organization" /></div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <select id="subject">
-                <option value="">Select a topic…</option>
-                <option>Product Demo Request</option>
-                <option>Pricing &amp; Licensing</option>
-                <option>Technical Support</option>
-                <option>Partnership Inquiry</option>
-                <option>Other</option>
-              </select>
-            </div>
+            <div class="form-group"><label for="subject">Subject</label><select id="subject"><option value="">Select a topic…</option><option>Product Demo Request</option><option>Pricing &amp; Licensing</option><option>Technical Support</option><option>Partnership Inquiry</option><option>Other</option></select></div>
             <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Describe your needs or question…" required></textarea></div>
             <button type="submit" class="btn-primary btn-full"><span>Send Message</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
           </form>
@@ -766,12 +509,12 @@
 
   </main>
 
-  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+  <!-- Logo only — no duplicate text -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="logo genesis no bg.png" alt="GENESIS" class="footer-logo" />
-        <span>GENESIS</span>
+        <img src="Logo.png" alt="GENESIS ERP" class="footer-logo" />
       </div>
       <p class="footer-copy">© 2024 GENESIS ERP. All rights reserved. Built in Indonesia for the Insurance Industry.</p>
       <div class="footer-links">
